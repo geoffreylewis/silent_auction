@@ -2,7 +2,27 @@
 # Silent Auction #
 ##################
 
-print("Welcome to the secret auction program.\n")
+# Importing the "os" module so that the screen can eventually be cleared for multiple bidders.
+import os
+
+# ASCII art for beginning banner/logo (courtesy of https://replit.com/@appbrewery/blind-auction-start#art.py).
+banner_logo = '''
+                         ___________
+                         \         /
+                          )_______(
+                          |"""""""|_.-._,.---------.,_.-._
+                          |       | | |               | | ''-.
+                          |       |_| |_             _| |_..-'
+                          |_______| '-' `'---------'` '-'
+                          )"""""""(
+                         /_________\\
+                       .-------------.
+                      /_______________\\
+'''
+
+# Intro to the silent auction.
+print(banner_logo)
+print("Welcome to the silent auction program.\n")
 
 # Empty dictionary of bidders and bids.
 bidders_bids_dictionary = {}
@@ -23,10 +43,15 @@ while continue_bidding == True:
     print(bidders_bids_dictionary) # TEST CODE
 
     # Offering the chance for other bidders before finishing the auction.
-    done_bidding = str(input("Are there any other bidders?  Type \"yes\" or \"no\": ").lower())
-    if done_bidding == "no":
+    more_bidders = str(input("Are there any other bidders?  Type \"yes\" or \"no\": ").lower())
+    if more_bidders == "yes":
+        if os.name == "posix":
+            os.system("clear") # Clears the screen for non-Windows OS's.
+        else:
+            os.system("cls") # Clears the screen for Windows OS's.
+    elif more_bidders == "no":
         continue_bidding = False
-    elif done_bidding != "no" and done_bidding != "yes":
+    else:
         print("You don't follow instructions well, do you?")
         exit()
 
