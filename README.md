@@ -10,6 +10,11 @@ Only using Python, this program will allow you to take part in a silent auction.
 
 ## Version History 
 
+**Version 0.2**  
+*5/23/2024*  
+* Created an empty dictionary that will hold the bidders (keys) and their bids (values).
+* Created a "while" loop for the actual auction process.
+
 **Version 0.1**  
 *5/22/2024*  
 * This program has just been started.
