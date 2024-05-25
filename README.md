@@ -10,6 +10,11 @@ Only using Python, this program will allow you to take part in a silent auction.
 
 ## Version History 
 
+**Version 0.3**  
+*5/24/2024*  
+* Added ASCII banner art.
+* Imported "os" module and programmed screen-clearing functionality for multiple bidders.
+
 **Version 0.2**  
 *5/23/2024*  
 * Created an empty dictionary that will hold the bidders (keys) and their bids (values).
