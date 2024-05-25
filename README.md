@@ -33,3 +33,5 @@ Only using Python, this program will allow you to take part in a silent auction.
 ## Acknowledgements
 
 In my ongoing quest to refresh my Python skills and stay sharp, I'm working my way through the Udemy course "100 Days of Code: The Complete Python Pro Bootcamp".  Shout out to Dr. Angela Yu and Udemy.
+
+An additional shout out to whomever created the ASCII art (copied from https://replit.com/@appbrewery/blind-auction-start#art.py).
