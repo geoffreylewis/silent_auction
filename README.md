@@ -10,6 +10,11 @@ Only using Python, this program will allow you to take part in a silent auction.
 
 ## Version History 
 
+**Version 1.0**  
+*5/25/2024*  
+* Program is functional.
+* Created "for" loop with "if" statement to determine highest bid and winning bidder.
+
 **Version 0.3**  
 *5/24/2024*  
 * Added ASCII banner art.
